@@ -11,7 +11,7 @@ def sqrt_number(a: float) -> float:
         float: square root of a number
     """
     if a < 0:
-        return "Invalid input. Please enter a positive number."
+        raise ValueError("Invalid input. Please enter a positive number.")
     return math.sqrt(a)
 
 
