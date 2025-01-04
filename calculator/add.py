@@ -2,13 +2,14 @@ def add_numbers(a: float, b: float) -> float:
     """This function returns the sum of two numbers
 
     Args:
-        a (float): first integer
-        b (float): second integer
+        a (float): first number
+        b (float): second number
 
     Returns:
         float: sum of the two numbers
     """
     return a + b
+
 
 if __name__ == "__main__":
     print("SUM OF TWO NUMBERS (INTEGER OR DECIMAL)")
