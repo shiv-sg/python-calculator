@@ -7,7 +7,7 @@ def square_number(a: float) -> float:
     Returns:
         float: square of a number
     """
-    return a * a
+    return a**2
 
 
 if __name__ == "__main__":

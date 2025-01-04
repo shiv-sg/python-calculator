@@ -51,9 +51,9 @@ if __name__=='__main__':
             print("result: ", multiply_numbers(a, b))
         elif operation=="4":
             print("DIVIDE OF TWO NUMBERS (INTEGER OR DECIMAL)")
-            a = get_valid_number("Enter the first number: ")
-            b = get_valid_number("Enter the second number: ")
-            print("result: ", divide_numbers(a, b))
+            numerator = get_valid_number("Enter the first number: ")
+            denominator = get_valid_number("Enter the second number: ")
+            print("result: ", divide_numbers(numerator=numerator, denominator=denominator))
         elif operation=="5":
             print("SQUARE OF NUMBER (INTEGER OR DECIMAL)")
             a = get_valid_number("Enter the number: ")

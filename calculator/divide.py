@@ -1,4 +1,4 @@
-def divide_numbers(a: float, b: float) -> float:
+def divide_numbers(numerator: float, denominator: float) -> float:
     """This function returns the division of two numbers
 
     Args:
@@ -8,11 +8,13 @@ def divide_numbers(a: float, b: float) -> float:
     Returns:
         float: division of two numbers
     """
-    return a / b
+    if denominator == 0:
+        return "Invalid input. Division by zero is not allowed."
+    return numerator / denominator
 
 
 if __name__ == "__main__":
     print("DIVISION OF TWO NUMBERS (INTEGER OR DECIMAL)")
-    a = float(input("Enter the first number: "))
-    b = float(input("Enter the second number: "))
-    print("result: ", divide_numbers(a, b))
+    numerator = float(input("Enter the first number: "))
+    denominator = float(input("Enter the second number: "))
+    print("result: ", divide_numbers(numerator, denominator))
