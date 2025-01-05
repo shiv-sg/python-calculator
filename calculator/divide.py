@@ -9,7 +9,7 @@ def divide_numbers(numerator: float, denominator: float) -> float:
         float: division of two numbers
     """
     if denominator == 0:
-        return "Invalid input. Division by zero is not allowed."
+        raise ValueError("Invalid input. Division by zero is not allowed.")
     return numerator / denominator
 
 

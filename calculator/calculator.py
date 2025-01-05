@@ -24,19 +24,19 @@ def get_valid_number(prompt: str):
             print("Quitting...")
             raise SystemExit()
         try:
-            return float(input(prompt))
+            return float(user_input)
         except ValueError:
             print("Invalid input. Please enter a valid number.")
 
 
-def get_valid_operation(prompt: str):
+def get_valid_operation(prompt: str) -> str:
     """Get a valid operation from the user input, allowing them to quit.
 
     Args:
         prompt ([str]): The input prompt to show
 
     Returns:
-        float: the entered operation
+        str: the entered operation
     """
     while True:
         operation = input(prompt)
